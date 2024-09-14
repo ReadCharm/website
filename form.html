@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Book Review Feedback Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form action="submit.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="book-title">Book Title:</label>
+            <input type="text" id="book-title" name="book-title" required>
+
+            <label for="rating">Rating (1 to 5):</label>
+            <select id="rating" name="rating" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="review">Your Review:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+
+            <label for="recommend">Would you recommend this book?</label>
+            <input type="radio" id="recommend-yes" name="recommend" value="yes" required>
+            <label for="recommend-yes">Yes</label>
+            <input type="radio" id="recommend-no" name="recommend" value="no" required>
+            <label for="recommend-no">No</label>
+
+            <button type="submit">Submit Feedback</button>
+            <button type="reset">Reset Feedback</button>
+        </form>
+    </div>
+</body>
+</html>
